@@ -1,4 +1,4 @@
-function findAgentData(agentName, agentData ) {
+function findAgentData(agentData, agentName ) {
     let agent=""
     for (let i = 0; i < agentData.data.length; i++) {
         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {

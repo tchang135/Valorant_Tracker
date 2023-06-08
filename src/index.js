@@ -1,4 +1,4 @@
-import { agentIconFetch } from "./scripts/agentIcon";
+import { agentIconFetch, agentIconListener } from "./scripts/agentIcon";
 
 agentIconFetch("Astra");
 agentIconFetch("Breach");
@@ -21,3 +21,7 @@ agentIconFetch("Skye");
 agentIconFetch("Sova");
 agentIconFetch("Viper");
 agentIconFetch("Yoru");
+
+document.addEventListener('DOMContentLoaded', function() {
+    agentIconListener("Astra");
+});
