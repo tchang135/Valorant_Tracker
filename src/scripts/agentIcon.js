@@ -8,15 +8,15 @@ function findAgentIcon(agentData, agentName) {
     }
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
+
     } catch (error) {
-        console.log("Please try again later", error);
+        console.log("Agent could not be found", error);
     }
 }
 
-export function AgentIconFetch(agentName) {
-    fetch(
-        "https://valorant-api.com/v1/agents"
-     )
+
+export function agentIconFetch(agentName) {
+    fetch("https://valorant-api.com/v1/agents")
      .then(function (response) {
          return response.json();
      })
