@@ -28,6 +28,7 @@ export function agentIconFetch(agentName) {
      })
 }
 
+
 export function agentIconListener(agentName) {
     const agentIcon = document.querySelector(`#${agentName}Icon1`);
     agentIcon?.addEventListener("click", function (e) {
