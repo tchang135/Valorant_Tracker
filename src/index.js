@@ -1,3 +1,23 @@
 import { AgentIconFetch } from "./scripts/agentIcon";
 
+AgentIconFetch("Astra");
+AgentIconFetch("Breach");
+AgentIconFetch("Brimstone");
+AgentIconFetch("Chamber");
+AgentIconFetch("Cypher");
+AgentIconFetch("Fade");
+AgentIconFetch("Gekko");
+AgentIconFetch("Harbor");
 AgentIconFetch("Jett");
+AgentIconFetch("KAY/O");
+AgentIconFetch("Killjoy");
+AgentIconFetch("Neon");
+AgentIconFetch("Omen");
+AgentIconFetch("Phoenix");
+AgentIconFetch("Raze");
+AgentIconFetch("Reyna");
+AgentIconFetch("Sage");
+AgentIconFetch("Skye");
+AgentIconFetch("Sova");
+AgentIconFetch("Viper");
+AgentIconFetch("Yoru");
