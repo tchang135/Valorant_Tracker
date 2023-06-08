@@ -24,4 +24,25 @@ agentIconFetch("Yoru");
 
 document.addEventListener('DOMContentLoaded', function() {
     agentIconListener("Astra");
+    agentIconListener("Breach");
+    agentIconListener("Brimstone");
+    agentIconListener("Chamber");
+    agentIconListener("Cypher");
+    agentIconListener("Fade");
+    agentIconListener("Gekko");
+    agentIconListener("Harbor");
+    agentIconListener("Jett");
+    // agentIconListener("KAY/O");
+    agentIconListener("Killjoy");
+    agentIconListener("Neon");
+    agentIconListener("Omen");
+    agentIconListener("Phoenix");
+    agentIconListener("Raze");
+    agentIconListener("Reyna");
+    agentIconListener("Sage");
+    agentIconListener("Skye");
+    agentIconListener("Sova");
+    agentIconListener("Viper");
+    agentIconListener("Yoru");
+
 });
