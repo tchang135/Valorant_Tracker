@@ -9,17 +9,17 @@ function findAgentData(agentName, agentData ) {
     try {
         document.querySelector("#agentName").innerText = agent.displayName;
         document.querySelector("#agentDescription").innerText = agent.description;
-        document.querySelector("#agentPortrait").innerText = agent.fullPortrait;
+        document.querySelector("#agentPortrait").src = agent.fullPortrait;
         document.querySelector("#agentRoleName").innerText = agent.role.displayName;
-        document.querySelector("#agentRoleIcon").innerText = agent.role.displayIcon;
+        document.querySelector("#agentRoleIcon").src = agent.role.displayIcon;
 
-        document.querySelector("#agentAbility1").innerText = agent.abilities[0].displayIcon;
-        document.querySelector("#agentAbility2").innerText = agent.abilities[1].displayIcon;
-        document.querySelector("#agentAbility3").innerText = agent.abilities[2].displayIcon;
-        document.querySelector("#agentUlt").innerText = agent.abilities[3].displayIcon;
+        document.querySelector("#agentAbility1").src = agent.abilities[0].displayIcon;
+        document.querySelector("#agentAbility2").src = agent.abilities[1].displayIcon;
+        document.querySelector("#agentAbility3").src = agent.abilities[2].displayIcon;
+        document.querySelector("#agentAbility4").src = agent.abilities[3].displayIcon;
         
-        document.querySelector("#agentAbilityName").innerText = agent.abilities[0].displayIcon;
-        document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].displayIcon;
+        document.querySelector("#agentAbilityName").innterText = agent.abilities[0].displayName;
+        document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].description;
         
 
     } catch (error) {
