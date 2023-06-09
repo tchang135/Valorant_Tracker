@@ -130,8 +130,11 @@
 }
 
 .selectedAbility {
-    margin-top: 10vh;
+    margin-top: 7vh;
     margin-bottom: 20vh;
+    margin-left: 2vw;
+    height: fit-content;
+    width: 50vw;
 }
 
 #agentAbility1 {
@@ -158,13 +161,15 @@
 }
 
 #agentAbilityDescription {
-    width: 25vw;
+    width: 30vw;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
+    /* margin-top: 6vh; */
 }
 
 #agentAbilityName {
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     width: 25vw;
+    /* margin-bottom: 6vh; */
 }
