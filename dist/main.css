@@ -146,24 +146,52 @@
 #agentAbility1 {
     width: 6vw;
     height: auto;
+    transition: all 0.3s ease;
+}
+
+#agentAbility1:hover {
+    transform: scale(1.5); 
+    filter: brightness(150%) contrast(200%);
+    animation-iteration-count: infinite;
 }
 
 #agentAbility2 {
     width: 6vw;
     height: auto;
     margin-left: 3vw;
+    transition: all 0.3s ease;
+}
+
+#agentAbility2:hover {
+    transform: scale(1.5); 
+    filter: brightness(150%) contrast(200%);
+    animation-iteration-count: infinite;
 }
 
 #agentAbility3 {
     width: 6vw;
     height: auto;
     margin-left: 3vw;
+    transition: all 0.3s ease;
+}
+
+#agentAbility3:hover {
+    transform: scale(1.5); 
+    filter: brightness(150%) contrast(200%);
+    animation-iteration-count: infinite;
 }
 
 #agentAbility4 {
     width: 6vw;
     height: auto;
     margin-left: 3vw;
+    transition: all 0.3s ease;
+}
+
+#agentAbility4:hover {
+    transform: scale(1.5); 
+    filter: brightness(150%) contrast(200%);
+    animation-iteration-count: infinite;
 }
 
 #agentAbilityDescription {
@@ -181,8 +209,14 @@
 }
 
 #abilityVideoClip {
-    width: 55vw;
+    width: 50vw;
     height: 55vh;
-    margin-left: 35vw;
+    margin-left: 38vw;
     margin-bottom: 10vh;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to left, black , red);
+    border-image-slice: 1;
+    object-fit: cover;
 }
+
+
