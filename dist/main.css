@@ -1,14 +1,10 @@
-/*!*************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*************************************************************************************************************************************/
-
 .background-video {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-    z-index: -1; /* Ensure video is behind other content */
+    z-index: -1; 
 }
 
 .background-video video {
@@ -35,8 +31,11 @@
 
 .contentWrapper {
     display: flex;
-    /* justify-content: center; */
+    
+}
 
+.agentDetails {
+    position: absolute;
 }
 
 .agentIcon {
@@ -45,43 +44,86 @@
     width: 25vw;
     height: 25vh;
     margin-left: 5vw;
+    margin-top: 2vh;
 }
 
 .agentIcon img {
     margin-left: 10px;
-    margin-top: 10px;
-    width: 20%; 
+    margin-top: 20px;
+    width: 25%; 
     height: auto;
+    transition: all 0.3s ease;
+}
+
+.agentIcon img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.9); 
+    cursor: pointer;
 }
 
 .agentDisplay {
     display: grid;
     justify-content: center;
+    position: relative;
+    margin-left: 3vw;
+    width: max-content;
+    height: max;
 }
 
 #agentName {
     font-size: 56px;
     color: white;
+    height: auto;
+    margin-top: 10vh;
 }
 
-#agentDescription {
-    width: 25vw;
-    color: white;
+.agentRoleSection {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 20vw;
+    height: auto;
 }
+
+.agentRoleSection {
+    margin-top: 40vh;
+}
+
+#agentPortraitWrapper {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 20vw;
+ }
 
 #agentPortrait {
-   width: 100px;
-   height: 100px;
+    width: 50vw;
+    height: auto;
+    object-fit: contain;
 }
 
 #agentRoleName {
     font-size: 26px;
     color: white;
+    display: inline-block;
+    margin-left: 1vw;
 }
 
 #agentRoleIcon {
     width: 3vw;
-    height: auto;
+    height: 6vh;
+    margin-top: 3vh;
+}
+
+#agentDescription {
+    width: 25vw;
+    color: white;
+    font-size: 18px;
+    margin-top: 5vh;
+}
+
+.abilitySection {
+    margin-top: 130vh;
+    margin-left: 10vw;
 }
 
 #agentAbility1 {
@@ -102,4 +144,15 @@
 #agentAbility4 {
     width: 5vw;
     height: auto;
+}
+
+#agentAbilityDescription {
+    width: 25vw;
+    color: white;
+}
+
+#agentAbilityName {
+    font-size: 30px;
+    color: white;
+    width: 25vw;
 }
