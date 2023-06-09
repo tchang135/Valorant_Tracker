@@ -18,9 +18,78 @@
     min-height: 100%;
 }
 
+.naviButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topLeftButtons {
+    width: 50%;
+}
+
+.topRightButtons {
+    width: 50%;
+    text-align: right;
+}
+
+#githubIcon {
+    font-size: 35px;
+    transition: all 0.3s ease;
+    margin-left: 3px;
+}
+
+#githubIcon:hover {
+    transform: scale(1.3);
+    animation: blink 1s infinite;
+}
+
+#linkedinIcon {
+    font-size: 35px;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+#linkedinIcon:hover {
+    transform: scale(1.3);
+    animation: blink 1s infinite;
+}
+
+#agentButton {
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+
+#agentButton:hover {
+    transform: scale(1.3);
+    animation: blink 1s infinite;
+}
+
+#weaponButton{
+    font-size: 35px;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+#weaponButton:hover {
+    transform: scale(1.3);
+    animation: blink 1s infinite;
+}
+
+#helpButton{
+    font-size: 35px;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+    margin-right: 3px;
+}
+
+#helpButton:hover {
+}
+
 .headerSection {
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 
 #websiteTitle {
@@ -31,7 +100,6 @@
 
 .contentWrapper {
     display: flex;
-    
 }
 
 .agentDetails {
@@ -127,7 +195,7 @@
 .abilitySection {
     display: flex;
     margin-top: 105vh;
-    margin-left: 7vw;
+    margin-left: 4vw;
 }
 
 .abilityWordSection {
@@ -211,7 +279,7 @@
 #abilityVideoClip {
     width: 50vw;
     height: 55vh;
-    margin-left: 38vw;
+    margin-left: 40vw;
     margin-bottom: 10vh;
     border: 5px solid transparent;
     border-image: linear-gradient(to left, black , red);
@@ -220,3 +288,9 @@
 }
 
 
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
