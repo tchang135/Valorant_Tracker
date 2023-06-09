@@ -125,8 +125,14 @@
 }
 
 .abilitySection {
-    margin-top: 110vh;
-    margin-left: 10vw;
+    display: flex;
+    margin-top: 105vh;
+    margin-left: 8vw;
+}
+
+.abilityWordSection {
+    position: absolute;
+    margin-top: 5vh;
 }
 
 .selectedAbility {
@@ -172,4 +178,11 @@
     color: white;
     width: 25vw;
     /* margin-bottom: 6vh; */
+}
+
+#abilityVideoClip {
+    width: 55vw;
+    height: 55vh;
+    margin-left: 35vw;
+    margin-bottom: 10vh;
 }
