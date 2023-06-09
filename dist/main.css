@@ -28,14 +28,14 @@
 }
 
 #websiteTitle {
-    font-size: 72px;
+    font-size: 100px;
     font-family: 'Exo 2', sans-serif;
     color: red;
 }
 
 .contentWrapper {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
@@ -55,10 +55,51 @@
 }
 
 .agentDisplay {
-    justify-content: grid;
+    display: grid;
+    justify-content: center;
+}
+
+#agentName {
+    font-size: 56px;
+    color: white;
+}
+
+#agentDescription {
+    width: 25vw;
+    color: white;
 }
 
 #agentPortrait {
    width: 100px;
    height: 100px;
+}
+
+#agentRoleName {
+    font-size: 26px;
+    color: white;
+}
+
+#agentRoleIcon {
+    width: 3vw;
+    height: auto;
+}
+
+#agentAbility1 {
+    width: 5vw;
+    height: auto;
+}
+
+#agentAbility2 {
+    width: 5vw;
+    height: auto;
+}
+
+#agentAbility3 {
+    width: 5vw;
+    height: auto;
+}
+
+#agentAbility4 {
+    width: 5vw;
+    height: auto;
 }
