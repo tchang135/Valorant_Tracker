@@ -125,33 +125,42 @@
 }
 
 .abilitySection {
-    margin-top: 130vh;
+    margin-top: 110vh;
     margin-left: 10vw;
 }
 
+.selectedAbility {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
 #agentAbility1 {
-    width: 5vw;
+    width: 6vw;
     height: auto;
 }
 
 #agentAbility2 {
-    width: 5vw;
+    width: 6vw;
     height: auto;
+    margin-left: 3vw;
 }
 
 #agentAbility3 {
-    width: 5vw;
+    width: 6vw;
     height: auto;
+    margin-left: 3vw;
 }
 
 #agentAbility4 {
-    width: 5vw;
+    width: 6vw;
     height: auto;
+    margin-left: 3vw;
 }
 
 #agentAbilityDescription {
     width: 25vw;
     color: white;
+    font-size: 22px;
 }
 
 #agentAbilityName {

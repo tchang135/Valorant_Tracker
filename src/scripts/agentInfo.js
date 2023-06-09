@@ -18,7 +18,7 @@ function findAgentData(agentData, agentName ) {
         document.querySelector("#agentAbility3").src = agent.abilities[2].displayIcon;
         document.querySelector("#agentAbility4").src = agent.abilities[3].displayIcon;
         
-        document.querySelector("#agentAbilityName").innterText = agent.abilities[0].displayName;
+        document.querySelector("#agentAbilityName").innerText = agent.abilities[0].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].description;
         
 
