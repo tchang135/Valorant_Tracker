@@ -1,4 +1,4 @@
-import { AgentDataFetch } from "./agentInfo";
+import { agentDataFetch } from "./agentInfo";
 
 function findAgentIcon(agentData, agentName) {
     let agent = ""
@@ -33,6 +33,6 @@ export function agentIconListener(agentName) {
     const agentIcon = document.querySelector(`#${agentName}Icon1`);
     agentIcon?.addEventListener("click", function (e) {
         e.preventDefault();
-        AgentDataFetch(agentName);
+        agentDataFetch(agentName);
     });
 }
