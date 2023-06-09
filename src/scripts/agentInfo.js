@@ -1,3 +1,5 @@
+import { abilityVideos } from "./abilityVideoLinks";
+
 function findAgentData(agentData, agentName ) {
     let agent=""
     for (let i = 0; i < agentData.data.length; i++) {
@@ -21,6 +23,15 @@ function findAgentData(agentData, agentName ) {
         document.querySelector("#agentAbilityName").innerText = agent.abilities[0].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].description;
         
+        const source = document.querySelector("#abilityVideoSource")
+        for (let key in abilityVideos) {
+            if (key.includes(agent.displayName)) {
+                source.src = abilityVideos[key];
+                break;
+            }
+        }
+        const video = document.querySelector("#abilityVideoClip")
+        video.load();
 
     } catch (error) {
         console.log("Agent could not be found", error);
