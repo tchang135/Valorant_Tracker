@@ -71,10 +71,11 @@
 }
 
 #agentName {
-    font-size: 56px;
+    font-size: 70px;
     color: white;
     height: auto;
     margin-top: 10vh;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .agentRoleSection {
@@ -102,23 +103,25 @@
 }
 
 #agentRoleName {
-    font-size: 26px;
+    font-size: 34px;
     color: white;
     display: inline-block;
     margin-left: 1vw;
+    font-family: 'Teko', sans-serif;
 }
 
 #agentRoleIcon {
-    width: 3vw;
-    height: 6vh;
-    margin-top: 3vh;
+    width: 4vw;
+    height: 8vh;
+    margin-top: 4vh;
 }
 
 #agentDescription {
-    width: 25vw;
+    width: 27vw;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     margin-top: 5vh;
+    font-family: 'Teko', sans-serif;
 }
 
 .abilitySection {
