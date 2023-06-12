@@ -25,6 +25,7 @@ export function agentIconFetch(agentName) {
      .then(function (data) {
          const agentData = data;
          findAgentIcon(agentData, agentName)
+        //  agentAbilityFetch(agentData, agentName)
      })
 }
 

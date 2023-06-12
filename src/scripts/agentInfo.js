@@ -1,4 +1,5 @@
 import { abilityVideos } from "./abilityVideoLinks";
+import { agentAbilityFetch } from "./ability";
 
 function findAgentData(agentData, agentName ) {
     let agent=""
@@ -47,5 +48,6 @@ export function agentDataFetch(agentName) {
     .then(function (data) {
         const agentData = data;
         findAgentData(agentData, agentName)
+        agentAbilityFetch(agentData, agentName)
     })
 }
