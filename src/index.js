@@ -1,5 +1,6 @@
 import { agentIconFetch, agentIconListener } from "./scripts/agentIcon";
 import { agentDataFetch } from "./scripts/agentInfo";
+import { weaponDataFetch } from "./scripts/weapon";
 
 agentIconFetch("Astra");
 agentIconFetch("Breach");
@@ -25,6 +26,8 @@ agentIconFetch("Yoru");
 
 
 agentDataFetch("Jett")
+
+weaponDataFetch("Phantom")
 
 
 document.addEventListener('DOMContentLoaded', function() {

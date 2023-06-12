@@ -1,14 +1,16 @@
 function findWeaponData (weaponData, weaponName) {
     let weapon =""
     for (let i = 0; i < weaponData.data.length; i++) {
-        if (weaponData.data[i].displayName.toUpperCase() === weaponName.toUpperCase() && weaponData.data[i]["isPlayableCharacter"]) {
+        if (weaponData.data[i].displayName.toUpperCase() === weaponName.toUpperCase()) {
             weapon = weaponData.data[i]
             break;
         }
     }
 
     if (weapon) {
-        
+        document.querySelector("#weaponPortrait").src = weapon.displayIcon;
+
+
     }
 }
 
