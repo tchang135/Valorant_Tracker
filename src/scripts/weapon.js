@@ -9,8 +9,10 @@ function findWeaponData (weaponData, weaponName) {
 
     if (weapon) {
         document.querySelector("#weaponPortrait").src = weapon.displayIcon;
-
-
+        document.querySelector('#magazineSize').innerText = `Magazine size: ${JSON.stringify(weapon.weaponStats.magazineSize)} bullets`;
+        document.querySelector('#fireRate').innerText = `Fire rate: ${JSON.stringify(weapon.weaponStats.fireRate)} bullets per second`;
+        document.querySelector('#reloadTime').innerText = `Reload time: ${JSON.stringify(weapon.weaponStats.reloadTimeSeconds)} seconds`;
+        document.querySelector('#firstBulletAccuracy').innerText = `First bullet accuracy: ${JSON.stringify(weapon.weaponStats.firstBulletAccuracy)}`;
     }
 }
 
