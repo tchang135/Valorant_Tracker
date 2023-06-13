@@ -16,6 +16,25 @@ function findWeaponData (weaponData, weaponName) {
     }
 }
 
+function weaponImageGrid (weaponData, weaponName) {
+    let weapon = ""
+    for (let i = 0; i < weaponData.data.length; i++) {
+        if (weaponData.data[i].displayName.toUpperCase() === weaponName.toUpperCase()) {
+            weapon = weaponData.data[i]
+            break;
+        }
+    }
+
+    if (weapon) {
+        console.log(weapon.shopData)
+        document.querySelector(`#${weapon.displayName}BuyImage`).src = weapon.shopData.newImage;
+        document.querySelector(`#${weapon.displayName}Cost`).innerText = weapon.shopData.cost;
+        if (weapon.displayName === 'Classic') {
+            document.querySelector(`#${weapon.displayName}Cost`).innerText = 'Free';
+        }
+    }
+}
+
 export function weaponDataFetch(weaponName) {
     fetch("https://valorant-api.com/v1/weapons")
     .then(function (response) {
@@ -24,10 +43,6 @@ export function weaponDataFetch(weaponName) {
     .then(function (data) {
         const weaponData = data;
         findWeaponData (weaponData, weaponName)
-        const weaponOptions = document.querySelector('#weaponOptions');
-        weaponOptions.addEventListener("change", (e) => {
-            const weaponName2 = e.target.value;
-            findWeaponData( weaponData, weaponName2)
-        })
+        weaponImageGrid(weaponData, weaponName)
     })
 }

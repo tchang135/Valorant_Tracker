@@ -27,7 +27,25 @@ agentIconFetch("Yoru");
 
 agentDataFetch("Jett")
 
+
+weaponDataFetch("Classic")
+weaponDataFetch("Shorty")
+weaponDataFetch("Frenzy")
+weaponDataFetch("Ghost")
+weaponDataFetch("Sheriff")
+weaponDataFetch("Stinger")
+weaponDataFetch("Bucky")
+weaponDataFetch("Spectre")
+weaponDataFetch("Judge")
+weaponDataFetch("Bulldog")
+weaponDataFetch("Guardian")
 weaponDataFetch("Phantom")
+weaponDataFetch("Vandal")
+weaponDataFetch("Marshal")
+weaponDataFetch("Operator")
+weaponDataFetch("Ares")
+weaponDataFetch("Odin")
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
