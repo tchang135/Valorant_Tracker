@@ -310,28 +310,52 @@ body {
 }
 
 .weaponSection {
-    margin-top: 30vh;
+    margin-top: 25vh;
+}
+
+.weaponRow1 {
+    margin-right: 1vw;
 }
 
 .weaponDisplayGrid {
     display: flex;
 }
 
+.row1HeaderContainer {
+    background-color: rgb(70, 204, 159);
+    justify-content: center;
+    display: flex;
+}
+
+.weaponGridText {
+    color: white;
+}
+
+.weaponItemWrapper1 {
+    margin-top: 1vh;
+    background-color: rgb(54, 54, 54);
+    display: grid;
+    justify-content: center;
+}
+
 .weaponBuyPortrait1 {
-    width: 12vw;
-    height: 7vh;
+    width: 13vw;
+    height: 8vh;
 }
 
 #ClassicBuyImage {
-    width: 9vw;
+    width: 10vw;
+    height: 10vh;
 }
 
 #FrenzyBuyImage {
-    width: 9vw;
+    width: 10vw;
+    height: 11vh;
 }
 
 #SheriffBuyImage {
-    width: 9vw;
+    width: 10vw;
+    height: 10vh;
 }
 
 
