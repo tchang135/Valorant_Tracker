@@ -338,9 +338,22 @@ body {
     justify-content: left;
 }
 
+.weaponItemWrapper2 {
+    margin-top: 1vh;
+    background-color: rgb(54, 54, 54);
+    display: grid;
+    justify-content: left;
+}
+
 .weaponBuyPortrait1 {
     width: 13vw;
     height: 8vh;
+    margin-top: 0.5vh;
+}
+
+.weaponBuyPortrait2 {
+    width: 22vw;
+    height: 13vh;
     margin-top: 0.5vh;
 }
 
@@ -365,6 +378,18 @@ body {
     width: 10vw;
     height: 10vh;
     margin-left: 1.5vw;
+}
+
+#BuckyBuyImage {
+    width: 26vw;
+    height: 10vh;
+    margin-top: 0.5vh;
+}
+
+#JudgeBuyImage {
+    width: 26vw;
+    height: 13vh;
+    margin-top: 0.5vh;
 }
 
 
