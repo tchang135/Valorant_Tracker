@@ -239,6 +239,7 @@ body {
     transform: scale(1.5); 
     filter: brightness(150%) contrast(200%);
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 #agentAbility2 {
@@ -252,6 +253,7 @@ body {
     transform: scale(1.5); 
     filter: brightness(150%) contrast(200%);
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 #agentAbility3 {
@@ -265,6 +267,7 @@ body {
     transform: scale(1.5); 
     filter: brightness(150%) contrast(200%);
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 #agentAbility4 {
@@ -278,20 +281,21 @@ body {
     transform: scale(1.5); 
     filter: brightness(150%) contrast(200%);
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 #agentAbilityDescription {
     width: 30vw;
     color: white;
-    font-size: 18px;
-    /* margin-top: 6vh; */
+    font-size: 22px;
+    font-family: 'Teko', sans-serif;
 }
 
 #agentAbilityName {
-    font-size: 28px;
+    font-size: 32px;
     color: white;
     width: 25vw;
-    /* margin-bottom: 6vh; */
+    font-family: 'Teko', sans-serif;
 }
 
 #abilityVideoClip {
@@ -303,6 +307,10 @@ body {
     border-image: linear-gradient(to left, black , red);
     border-image-slice: 1;
     object-fit: cover;
+}
+
+.weaponSection {
+    margin-top: 30vh;
 }
 
 
