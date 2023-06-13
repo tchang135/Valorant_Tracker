@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 4vw;
 }
 
 .topLeftButtons {
@@ -33,15 +34,10 @@ body {
 }
 
 .topRightButtons {
-    width: fit-content;
     text-align: right;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
-
-.topRightButtons:hover .modal {
-    display: block;
-} 
 
 #githubIcon {
     font-size: 35px;
@@ -72,42 +68,40 @@ body {
     transition: all 0.3s ease;
 }
 
-#agentButton:hover {
-    transform: scale(1.3);
-    animation: blink 1s infinite;
-    cursor: pointer;
-}
-
-#weaponButton{
-    font-size: 35px;
-    margin-left: 25px;
-    transition: all 0.3s ease;
-}
-
-#weaponButton:hover {
-    transform: scale(1.3);
-    animation: blink 1s infinite;
-    cursor: pointer;
-}
 
 #helpButton{
     font-size: 35px;
     margin-left: 25px;
     transition: all 0.3s ease;
-    margin-right: 3px;
+    margin-right: 1vw;
 }
 
-.modal {
-    display: none;
-    position: absolute;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .modal {
+    visibility: hidden;
     width: 200px;
-    background: white;
-    border: 1px solid #000;
+    background-color: rgb(235, 41, 41);
+    color: rgb(255, 255, 255);
+    text-align: center;
     padding: 10px;
-    top: 100%; 
-    left: 50%;
-    transform: translate(-50%, 10px);
-  }
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    left: -3.5vw;
+    top: 23vh;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+.tooltip:hover .modal {
+    visibility: visible;
+}
 
 .headerSection {
     display: flex;
