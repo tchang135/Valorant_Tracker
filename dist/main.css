@@ -313,6 +313,26 @@ body {
     margin-top: 30vh;
 }
 
+.weaponDisplayGrid {
+    display: flex;
+}
+
+.weaponBuyPortrait1 {
+    width: 12vw;
+    height: 7vh;
+}
+
+#ClassicBuyImage {
+    width: 9vw;
+}
+
+#FrenzyBuyImage {
+    width: 9vw;
+}
+
+#SheriffBuyImage {
+    width: 9vw;
+}
 
 
 @keyframes blink {
