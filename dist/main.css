@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    margin-left: 3vw;
 }
 
 .background-video {
@@ -26,7 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-left: 4vw;
+    margin-left: 1vw;
 }
 
 .topLeftButtons {
