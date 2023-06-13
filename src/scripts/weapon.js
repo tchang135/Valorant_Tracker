@@ -30,7 +30,7 @@ function weaponImageGrid (weaponData, weaponName) {
         document.querySelector(`#${weapon.displayName}BuyImage`).src = weapon.shopData.newImage;
         document.querySelector(`#${weapon.displayName}Cost`).innerText = weapon.shopData.cost;
         if (weapon.displayName === 'Classic') {
-            document.querySelector(`#${weapon.displayName}Cost`).innerText = 'Free';
+            document.querySelector(`#${weapon.displayName}Cost`).innerText = 'FREE';
         }
     }
 }
