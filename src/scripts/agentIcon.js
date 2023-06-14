@@ -42,11 +42,15 @@ export function agentIconListener(agentName) {
             const previousSelectedIcon = document.querySelector(`#${selectedAgent}Icon1`);
             previousSelectedIcon.style.transform = "";
             previousSelectedIcon.style.filter = "";
+            previousSelectedIcon.style.border = "";
+            previousSelectedIcon.style.boxShadow = "";
         }
         agentDataFetch(agentName);
         selectedAgent = agentName;
         agentIcon.style.transform = "scale(1.2)"; 
-        agentIcon.style.filter = "brightness(1.7) sepia(3) hue-rotate(80deg) ";  
+        agentIcon.style.filter = "brightness(1.7)";  
+        agentIcon.style.border = "3px solid red";
+        agentIcon.style.boxShadow = "0 0 10px 3px red";
         console.log(selectedAgent)
     });
 }

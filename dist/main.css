@@ -139,6 +139,7 @@ body {
     width: 25%; 
     height: auto;
     transition: all 0.3s ease;
+    border: 3px solid transparent;
 }
 
 .agentIcon img:hover {
@@ -532,36 +533,6 @@ body {
     width: 27vw;
     height: 11vh;
 }
-
-#agentAbility1::after,
-#agentAbility2::after,
-#agentAbility3::after,
-#agentAbility4::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 0, 0, 0.5);
-    z-index: 1;
-    pointer-events: none;  /* allows click events to pass through */
-}
-
-.red-overlay::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 0, 0, 0.5);
-    z-index: 1;
-    pointer-events: none;
-}
-
 
 @keyframes blink {
     0% {opacity: 1;}
