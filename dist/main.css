@@ -317,6 +317,13 @@ body {
     margin-right: 1vw;
 }
 
+.weaponRow2 {
+    margin-right: 1vw;
+}
+.weaponRow3 {
+    margin-right: 1vw;
+}
+
 .weaponDisplayGrid {
     display: flex;
 }
@@ -327,14 +334,20 @@ body {
     display: flex;
 }
 
-.weaponGridText {
-    color: white;
-}
-
 .row2HeaderContainer {
     background-color: rgb(70, 204, 159);
     justify-content: center;
     display: flex;
+}
+
+.row3HeaderContainer {
+    background-color: rgb(70, 204, 159);
+    justify-content: center;
+    display: flex;
+}
+
+.weaponGridText {
+    color: white;
 }
 
 .weaponItemWrapper1 {
@@ -351,7 +364,14 @@ body {
     display: grid;
     justify-content: left;
     width: 19.5vw;
-    /* height: ; */
+}
+
+.weaponItemWrapper3 {
+    margin-top: 1vh;
+    background-color: rgb(54, 54, 54);
+    display: grid;
+    justify-content: left;
+    width: 26vw;
 }
 
 .weaponBuyPortrait1 {
@@ -365,6 +385,13 @@ body {
     width: 17vw;
     height: 11vh;
     margin-top: 0.5vh;
+    margin-left: 1vw;
+}
+
+.weaponBuyPortrait3 {
+    width: 21vw;
+    height: 11vh;
+    margin-top: 1.6vh;
     margin-left: 1vw;
 }
 
@@ -414,6 +441,27 @@ body {
     width: 18vw;
     height: 10.8vh;
     margin-top: 0.5vh;
+}
+
+#BulldogBuyImage {
+    margin-left: 2.5vw;
+}
+
+#GuardianBuyImage {
+    width: 24vw;
+    height: 8vh;
+}
+
+#PhantomBuyImage {
+    width: 23vw;
+    height: 9vh;
+    margin-left: 1.5vw;
+}
+
+#VandalBuyImage {
+    height: 11vh;
+    width: 23vw;
+    margin-left: 1.5vw;
 }
 
 
