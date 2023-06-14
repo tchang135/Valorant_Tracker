@@ -46,7 +46,7 @@ export function agentIconListener(agentName) {
         agentDataFetch(agentName);
         selectedAgent = agentName;
         agentIcon.style.transform = "scale(1.2)"; 
-        agentIcon.style.filter = "brightness(1.3) sepia(1) hue-rotate(100deg) ";  
+        agentIcon.style.filter = "brightness(1.7) sepia(3) hue-rotate(80deg) ";  
         console.log(selectedAgent)
     });
 }

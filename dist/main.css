@@ -346,6 +346,12 @@ body {
     display: flex;
 }
 
+.row4HeaderContainer {
+    background-color: rgb(70, 204, 159);
+    justify-content: center;
+    display: flex;
+}
+
 .weaponGridText {
     color: white;
 }
@@ -355,7 +361,7 @@ body {
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
-    width: 11.5vw;
+    width: 13vw;
 }
 
 .weaponItemWrapper2 {
@@ -363,7 +369,7 @@ body {
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
-    width: 21vw;
+    width: 23vw;
 }
 
 .weaponItemWrapper3 {
@@ -371,26 +377,61 @@ body {
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
-    width: 26vw;
+    width: 27vw;
+}
+
+.weaponItemWrapper4 {
+    margin-top: 1vh;
+    background-color: rgb(54, 54, 54);
+    display: grid;
+    justify-content: left;
+    width: 29vw;
+}
+
+.weaponItemWrapper1:hover {
+    filter: brightness(140%);
+    cursor: pointer;
+}
+
+.weaponItemWrapper2:hover {
+    filter: brightness(140%);
+    cursor: pointer;
+}
+
+.weaponItemWrapper3:hover {
+    filter: brightness(140%);
+    cursor: pointer;
+}
+
+.weaponItemWrapper4:hover {
+    filter: brightness(140%);
+    cursor: pointer;
 }
 
 .weaponBuyPortrait1 {
     width: 11vw;
     height: 6vh;
     margin-top: 0.5vh;
-    margin-left: 0.3vw;
+    margin-left: 1vw;
 }
 
 .weaponBuyPortrait2 {
     width: 17vw;
     height: 11vh;
     margin-top: 0.5vh;
-    margin-left: .5vw;
+    margin-left: 1.5vw;
 }
 
 .weaponBuyPortrait3 {
     width: 21vw;
     height: 11vh;
+    margin-top: 1.6vh;
+    margin-left: 1vw;
+}
+
+.weaponBuyPortrait4 {
+    width: 25vw;
+    height: 9vh;
     margin-top: 1.6vh;
     margin-left: 1vw;
 }
@@ -409,19 +450,19 @@ body {
 #FrenzyBuyImage {
     width: 8vw;
     height: 9vh;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
 }
 
 #SheriffBuyImage {
     width: 8vw;
     height: 8vh;
-    margin-left: 1.5vw;
+    margin-left: 2.5vw;
 }
 
 #StingerBuyImage {
     width: 15vw;
     margin-top: 1vh;
-    margin-left: 3.5vw;
+    margin-left: 5vw;
 }
 #SpectreBuyImage {
     margin-top: 1vh;
@@ -436,7 +477,7 @@ body {
     width: 18vw;
     height: 6vh;
     margin-top: 1vh;
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 #JudgeBuyImage {
@@ -465,6 +506,33 @@ body {
     width: 23vw;
     margin-left: 1.5vw;
 }
+
+#MarshalBuyImage {
+    width: 25vw;
+    height: 7vh;
+    margin-left: 2vw;
+}
+
+#operatorItem {
+    margin-bottom: 1vh;
+}
+
+#OperatorBuyImage {
+    width: 27vw;
+    height: 9vh;
+}
+
+#AresBuyImage {
+    width: 25vw;
+    margin-left: 2vw;
+}
+
+#OdinBuyImage {
+    width: 27vw;
+    height: 11vh;
+}
+
+
 
 
 @keyframes blink {
