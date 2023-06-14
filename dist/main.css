@@ -433,14 +433,14 @@ body {
 .weaponBuyPortrait2 {
     width: 17vw;
     height: 11vh;
-    margin-top: 0.5vh;
+    margin-top: 1vh;
     margin-left: 1.5vw;
 }
 
 .weaponBuyPortrait3 {
     width: 21vw;
     height: 11vh;
-    margin-top: 1.6vh;
+    margin-top: 1.7vh;
     margin-left: 1vw;
 }
 
@@ -585,13 +585,13 @@ body {
     margin-top: -0vh;
     font-family: 'Teko', sans-serif;
     margin-left: 3vw;
+    margin-bottom: -3.8vh;
 }
 
 #magazineSize {
     color: white;
     font-size: 26px;
     font-family: 'Teko', sans-serif;
-    margin-top: -3vh;
 }
 
 #fireRate {
