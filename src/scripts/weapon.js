@@ -8,6 +8,7 @@ function findWeaponData (weaponData, weaponName) {
     }
 
     if (weapon) {
+        console.log(weapon.shopData)
         document.querySelector("#weaponMainPortrait").src = weapon.displayIcon;
         document.querySelector('#weaponNameDisplay').innerText = weapon.displayName
         document.querySelector('#magazineSize').innerText = `Magazine size: ${JSON.stringify(weapon.weaponStats.magazineSize)} bullets`;
@@ -27,7 +28,6 @@ function weaponImageGrid (weaponData, weaponName) {
     }
 
     if (weapon) {
-        console.log(weapon.shopData)
         document.querySelector(`#${weapon.displayName}BuyImage`).src = weapon.shopData.newImage;
         document.querySelector(`#${weapon.displayName}Cost`).innerText = weapon.shopData.cost;
         if (weapon.displayName === 'Classic') {
@@ -74,10 +74,29 @@ export function weaponDataFetch(weaponName) {
     })
 }
 
+let selectedWeapon = null;
+let previousWeaponCost = null;
+
 export function weaponIconListener(weaponName, weaponData) {
     const weaponIcon = document.querySelector(`#${weaponName}Item`);
     weaponIcon?.addEventListener("click", function (e) {
         e.preventDefault();
-        findWeaponData(weaponData, weaponName)
+        if (selectedWeapon === weaponName) {
+            return;
+        }
+        if (selectedWeapon) {
+            const previousWeaponIcon = document.querySelector(`#${selectedWeapon}Item`);
+            previousWeaponIcon.style.filter = "";
+            previousWeaponIcon.style.border = "";
+            previousWeaponIcon.style.backgroundColor = "";
+            document.querySelector(`#${selectedWeapon}Cost`).innerText = previousWeaponCost;
+        }
+        selectedWeapon = weaponName;
+        const weaponCostText = document.querySelector(`#${weaponName}Cost`);
+        previousWeaponCost = weaponCostText.innerText;
+        weaponIcon.style.border = "2px solid rgb(70, 204, 159)";
+        weaponIcon.style.backgroundColor = "rgba(173, 216, 230, 0.5)"
+        weaponCostText.innerText = "OWNED";
+        findWeaponData(weaponData, weaponName);
     });
 }
