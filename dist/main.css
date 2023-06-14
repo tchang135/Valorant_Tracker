@@ -336,6 +336,7 @@ body {
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
+    width: 11.5vw;
 }
 
 .weaponItemWrapper2 {
@@ -346,9 +347,10 @@ body {
 }
 
 .weaponBuyPortrait1 {
-    width: 13vw;
-    height: 8vh;
+    width: 11vw;
+    height: 6vh;
     margin-top: 0.5vh;
+    margin-left: 0.3vw;
 }
 
 .weaponBuyPortrait2 {
@@ -363,20 +365,20 @@ body {
 }
 
 #ClassicBuyImage {
-    width: 10vw;
-    height: 10vh;
+    width: 8vw;
+    height: 8vh;
     margin-left: 1.5vw;
 }
 
 #FrenzyBuyImage {
-    width: 10vw;
-    height: 11vh;
+    width: 8vw;
+    height: 9vh;
     margin-left: 1.5vw;
 }
 
 #SheriffBuyImage {
-    width: 10vw;
-    height: 10vh;
+    width: 8vw;
+    height: 8vh;
     margin-left: 1.5vw;
 }
 
