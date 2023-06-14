@@ -42,7 +42,15 @@ export function weaponDataFetch(weaponName) {
     })
     .then(function (data) {
         const weaponData = data;
-        findWeaponData (weaponData, weaponName)
+        weaponIconListener (weaponName, weaponData)
         weaponImageGrid(weaponData, weaponName)
     })
+}
+
+export function weaponIconListener(weaponName, weaponData) {
+    const weaponIcon = document.querySelector(`#${weaponName}Item`);
+    weaponIcon?.addEventListener("click", function (e) {
+        e.preventDefault();
+        findWeaponData(weaponData, weaponName)
+    });
 }
