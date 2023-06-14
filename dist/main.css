@@ -549,15 +549,17 @@ body {
 }
 
 .weaponImage {
-    margin-top: 7vh;
+    margin-top: 9vh;
     position: absolute;
     width: 40vw;
     height: 20vh;
+    margin-left: 1vw;
 }
 
 #weaponMainPortrait {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .weaponStats {
@@ -575,6 +577,7 @@ body {
     color: white;
     font-size: 26px;
     font-family: 'Teko', sans-serif;
+    margin-top: -3vh;
 }
 
 #fireRate {
