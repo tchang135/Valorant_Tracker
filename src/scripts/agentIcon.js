@@ -29,11 +29,24 @@ export function agentIconFetch(agentName) {
      })
 }
 
+let selectedAgent = null;
 
 export function agentIconListener(agentName) {
     const agentIcon = document.querySelector(`#${agentName}Icon1`);
     agentIcon?.addEventListener("click", function (e) {
         e.preventDefault();
+        if (selectedAgent === agentName) {
+            return;
+        }
+        if (selectedAgent) {
+            const previousSelectedIcon = document.querySelector(`#${selectedAgent}Icon1`);
+            previousSelectedIcon.style.transform = "";
+            previousSelectedIcon.style.filter = "";
+        }
         agentDataFetch(agentName);
+        selectedAgent = agentName;
+        agentIcon.style.transform = "scale(1.2)"; 
+        agentIcon.style.filter = "brightness(1.3) sepia(1) hue-rotate(100deg) ";  
+        console.log(selectedAgent)
     });
 }

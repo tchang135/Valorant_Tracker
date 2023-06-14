@@ -39,7 +39,6 @@ function findAgentData(agentData, agentName ) {
     }
 }
 
-
 export function agentDataFetch(agentName) {
     fetch("https://valorant-api.com/v1/agents")
     .then(function (response) {
