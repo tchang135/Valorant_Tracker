@@ -1,14 +1,35 @@
 import { abilityVideos } from "./abilityVideoLinks";
 
-let selectedAbility = null;
-
 export function agentAbilityFetch(agentData, agentName) {
+    let selectedAbility = null;
     let agent=""
     for (let i = 0; i < agentData.data.length; i++) {
         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
             agent = agentData.data[i]
             break;
         }
+    }
+    if (selectedAbility === null) {
+        const previousAbilityIcon1 = document.querySelector(`#agentAbility1`);
+            const previousAbilityIcon2 = document.querySelector(`#agentAbility2`);
+            const previousAbilityIcon3 = document.querySelector(`#agentAbility3`);
+            const previousAbilityIcon4 = document.querySelector(`#agentAbility4`);
+            previousAbilityIcon1.style.transform = "";
+            previousAbilityIcon2.style.transform = "";
+            previousAbilityIcon3.style.transform = "";
+            previousAbilityIcon4.style.transform = "";
+            previousAbilityIcon1.style.border = "";
+            previousAbilityIcon2.style.border = "";
+            previousAbilityIcon3.style.border = "";
+            previousAbilityIcon4.style.border = "";
+            previousAbilityIcon1.style.boxShadow = "";
+            previousAbilityIcon1.style.opacity = "0.5"; 
+            previousAbilityIcon2.style.boxShadow = "";
+            previousAbilityIcon2.style.opacity = "0.5"; 
+            previousAbilityIcon3.style.boxShadow = "";
+            previousAbilityIcon3.style.opacity = "0.5";  
+            previousAbilityIcon4.style.boxShadow = "";
+            previousAbilityIcon4.style.opacity = "0.5";   
     }
 
     const abilityIcon1 = document.querySelector(`#agentAbility1`);
@@ -29,6 +50,32 @@ export function agentAbilityFetch(agentData, agentName) {
         if (selectedAbility === agent.abilities[0].displayName) {
             return;
         }
+        if (selectedAbility) {
+            const previousAbilityIcon1 = document.querySelector(`#agentAbility1`);
+            const previousAbilityIcon2 = document.querySelector(`#agentAbility2`);
+            const previousAbilityIcon3 = document.querySelector(`#agentAbility3`);
+            const previousAbilityIcon4 = document.querySelector(`#agentAbility4`);
+            previousAbilityIcon1.style.transform = "";
+            previousAbilityIcon2.style.transform = "";
+            previousAbilityIcon3.style.transform = "";
+            previousAbilityIcon4.style.transform = "";
+            previousAbilityIcon1.style.border = "";
+            previousAbilityIcon2.style.border = "";
+            previousAbilityIcon3.style.border = "";
+            previousAbilityIcon4.style.border = "";
+            previousAbilityIcon1.style.boxShadow = "";
+            previousAbilityIcon1.style.opacity = "0.5"; 
+            previousAbilityIcon2.style.boxShadow = "";
+            previousAbilityIcon2.style.opacity = "0.5"; 
+            previousAbilityIcon3.style.boxShadow = "";
+            previousAbilityIcon3.style.opacity = "0.5";  
+            previousAbilityIcon4.style.boxShadow = "";
+            previousAbilityIcon4.style.opacity = "0.5";   
+        }
+        abilityIcon1.style.transform = "scale(1.6)"; 
+        abilityIcon1.style.border = "3px solid red";
+        abilityIcon1.style.opacity = "1"; 
+        abilityIcon1.style.boxShadow = "0 0 10px 3px red";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[0].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].description;
         selectedAbility = agent.abilities[0].displayName
@@ -41,8 +88,34 @@ export function agentAbilityFetch(agentData, agentName) {
         if (selectedAbility === agent.abilities[1].displayName) {
             return;
         }
+        if (selectedAbility) {
+            const previousAbilityIcon1 = document.querySelector(`#agentAbility1`);
+            const previousAbilityIcon2 = document.querySelector(`#agentAbility2`);
+            const previousAbilityIcon3 = document.querySelector(`#agentAbility3`);
+            const previousAbilityIcon4 = document.querySelector(`#agentAbility4`);
+            previousAbilityIcon1.style.transform = "";
+            previousAbilityIcon2.style.transform = "";
+            previousAbilityIcon3.style.transform = "";
+            previousAbilityIcon4.style.transform = "";
+            previousAbilityIcon1.style.border = "";
+            previousAbilityIcon2.style.border = "";
+            previousAbilityIcon3.style.border = "";
+            previousAbilityIcon4.style.border = "";
+            previousAbilityIcon2.style.boxShadow = "";
+            previousAbilityIcon2.style.opacity = "0.5"; 
+            previousAbilityIcon3.style.boxShadow = "";
+            previousAbilityIcon3.style.opacity = "0.5";  
+            previousAbilityIcon4.style.boxShadow = "";
+            previousAbilityIcon4.style.opacity = "0.5"; 
+            previousAbilityIcon1.style.boxShadow = "";
+            previousAbilityIcon1.style.opacity = "0.5"; 
+        }
         document.querySelector("#agentAbilityName").innerText = agent.abilities[1].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[1].description;
+        abilityIcon2.style.transform = "scale(1.6)"; 
+        abilityIcon2.style.border = "3px solid red";
+        abilityIcon2.style.opacity = "1"; 
+        abilityIcon2.style.boxShadow = "0 0 10px 3px red";
         selectedAbility = agent.abilities[1].displayName
         source.src = abilityVideoArray[1];
         video.load();
@@ -53,6 +126,32 @@ export function agentAbilityFetch(agentData, agentName) {
         if (selectedAbility === agent.abilities[2].displayName) {
             return;
         }
+        if (selectedAbility) {
+            const previousAbilityIcon1 = document.querySelector(`#agentAbility1`);
+            const previousAbilityIcon2 = document.querySelector(`#agentAbility2`);
+            const previousAbilityIcon3 = document.querySelector(`#agentAbility3`);
+            const previousAbilityIcon4 = document.querySelector(`#agentAbility4`);
+            previousAbilityIcon1.style.transform = "";
+            previousAbilityIcon2.style.transform = "";
+            previousAbilityIcon3.style.transform = "";
+            previousAbilityIcon4.style.transform = "";
+            previousAbilityIcon1.style.border = "";
+            previousAbilityIcon2.style.border = "";
+            previousAbilityIcon3.style.border = "";
+            previousAbilityIcon4.style.border = "";
+            previousAbilityIcon2.style.boxShadow = "";
+            previousAbilityIcon2.style.opacity = "0.5"; 
+            previousAbilityIcon3.style.boxShadow = "";
+            previousAbilityIcon3.style.opacity = "0.5";  
+            previousAbilityIcon4.style.boxShadow = "";
+            previousAbilityIcon4.style.opacity = "0.5"; 
+            previousAbilityIcon1.style.boxShadow = "";
+            previousAbilityIcon1.style.opacity = "0.5"; 
+        }
+        abilityIcon3.style.transform = "scale(1.6)"; 
+        abilityIcon3.style.border = "3px solid red";
+        abilityIcon3.style.opacity = "1"; 
+        abilityIcon3.style.boxShadow = "0 0 10px 3px red";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[2].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[2].description;
         selectedAbility = agent.abilities[2].displayName
@@ -65,6 +164,32 @@ export function agentAbilityFetch(agentData, agentName) {
         if (selectedAbility === agent.abilities[3].displayName) {
             return;
         }
+        if (selectedAbility) {
+            const previousAbilityIcon1 = document.querySelector(`#agentAbility1`);
+            const previousAbilityIcon2 = document.querySelector(`#agentAbility2`);
+            const previousAbilityIcon3 = document.querySelector(`#agentAbility3`);
+            const previousAbilityIcon4 = document.querySelector(`#agentAbility4`);
+            previousAbilityIcon1.style.transform = "";
+            previousAbilityIcon2.style.transform = "";
+            previousAbilityIcon3.style.transform = "";
+            previousAbilityIcon4.style.transform = "";
+            previousAbilityIcon1.style.border = "";
+            previousAbilityIcon2.style.border = "";
+            previousAbilityIcon3.style.border = "";
+            previousAbilityIcon4.style.border = "";
+            previousAbilityIcon2.style.boxShadow = "";
+            previousAbilityIcon2.style.opacity = "0.5"; 
+            previousAbilityIcon3.style.boxShadow = "";
+            previousAbilityIcon3.style.opacity = "0.5";  
+            previousAbilityIcon4.style.boxShadow = "";
+            previousAbilityIcon4.style.opacity = "0.5"; 
+            previousAbilityIcon1.style.boxShadow = "";
+            previousAbilityIcon1.style.opacity = "0.5"; 
+        }
+        abilityIcon4.style.transform = "scale(1.6)"; 
+        abilityIcon4.style.border = "3px solid red";
+        abilityIcon4.style.opacity = "1"; 
+        abilityIcon4.style.boxShadow = "0 0 10px 3px red";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[3].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[3].description;
         selectedAbility = agent.abilities[3].displayName
