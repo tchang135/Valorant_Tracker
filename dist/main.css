@@ -86,7 +86,7 @@ body {
 .tooltip .modal {
     visibility: hidden;
     width: 200px;
-    background-color: rgb(235, 41, 41);
+    background-color: rgb(221, 82, 82);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
@@ -113,7 +113,7 @@ body {
 #websiteTitle {
     font-size: 100px;
     font-family: 'Exo 2', sans-serif;
-    color: red;
+    color: rgb(221, 82, 82);
 }
 
 .contentWrapper {
@@ -305,7 +305,7 @@ body {
     margin-left: 40vw;
     margin-bottom: 10vh;
     border: 5px solid transparent;
-    border-image: linear-gradient(to left, black , red);
+    border-image: linear-gradient(to left, black , rgb(221, 82, 82));
     border-image-slice: 1;
     object-fit: cover;
 }
@@ -356,6 +356,7 @@ body {
 
 .weaponGridText {
     color: white;
+    font-family: 'Teko', sans-serif;
 }
 
 .weaponItemWrapper1 {
@@ -375,7 +376,7 @@ body {
 }
 
 .weaponItemWrapper3 {
-    margin-top: 1vh;
+    margin-top: 1.3vh;
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
@@ -383,7 +384,7 @@ body {
 }
 
 .weaponItemWrapper4 {
-    margin-top: 1vh;
+    margin-top: 1.1vh;
     background-color: rgb(54, 54, 54);
     display: grid;
     justify-content: left;
@@ -485,7 +486,7 @@ body {
 #JudgeBuyImage {
     width: 20vw;
     height: 10.8vh;
-    margin-top: 0.5vh;
+    margin-top: 1vh;
 }
 
 #BulldogBuyImage {
@@ -537,15 +538,14 @@ body {
 .selectedWeaponDisplay {
     display: flex;
     margin-top: 10vh;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to left, rgb(255, 254, 254) , red);
-    border-image-slice: 1;
+    border: 3px solid red;
     width: 75%;
     height: 25vh;
     padding-bottom: 15vh;
     margin-left: 12vw;
     margin-bottom: 10vh;
-    background-color: red;
+    background-color: rgb(221, 82, 82);
+    box-shadow: "0 0 10px 3px red";
 }
 
 .weaponImage {
@@ -568,26 +568,31 @@ body {
     color: white;
     font-size: 50px;
     margin-top: -0vh;
+    font-family: 'Teko', sans-serif;
 }
 
 #magazineSize {
     color: white;
     font-size: 26px;
+    font-family: 'Teko', sans-serif;
 }
 
 #fireRate {
     color: white;
     font-size: 26px;
+    font-family: 'Teko', sans-serif;
 }
 
 #reloadTime {
     color: white;
     font-size: 26px;
+    font-family: 'Teko', sans-serif;
 }
 
 #firstBulletAccuracy {
     color: white;
     font-size: 26px;
+    font-family: 'Teko', sans-serif;
 }
 
 @keyframes blink {
