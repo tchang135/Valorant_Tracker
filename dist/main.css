@@ -326,6 +326,7 @@ body {
 
 .weaponDisplayGrid {
     display: flex;
+    margin-left: 1.5vw;
 }
 
 .row1HeaderContainer {
