@@ -534,6 +534,62 @@ body {
     height: 11vh;
 }
 
+.selectedWeaponDisplay {
+    display: flex;
+    margin-top: 10vh;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to left, rgb(255, 254, 254) , red);
+    border-image-slice: 1;
+    width: 75%;
+    height: 25vh;
+    padding-bottom: 15vh;
+    margin-left: 12vw;
+    margin-bottom: 10vh;
+    background-color: red;
+}
+
+.weaponImage {
+    margin-top: 7vh;
+    position: absolute;
+    width: 40vw;
+    height: 20vh;
+}
+
+#weaponMainPortrait {
+    width: auto;
+    height: auto;
+}
+
+.weaponStats {
+    margin-left: 47vw;
+}
+
+#weaponNameDisplay {
+    color: white;
+    font-size: 50px;
+    margin-top: -0vh;
+}
+
+#magazineSize {
+    color: white;
+    font-size: 26px;
+}
+
+#fireRate {
+    color: white;
+    font-size: 26px;
+}
+
+#reloadTime {
+    color: white;
+    font-size: 26px;
+}
+
+#firstBulletAccuracy {
+    color: white;
+    font-size: 26px;
+}
+
 @keyframes blink {
     0% {opacity: 1;}
     50% {opacity: 0;}
