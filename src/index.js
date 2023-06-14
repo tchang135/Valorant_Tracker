@@ -1,6 +1,6 @@
 import { agentIconFetch, agentIconListener } from "./scripts/agentIcon";
 import { agentDataFetch } from "./scripts/agentInfo";
-import { weaponDataFetch } from "./scripts/weapon";
+import { weaponDataFetch, defaultGunLoad } from "./scripts/weapon";
 
 agentIconFetch("Astra");
 agentIconFetch("Breach");
@@ -70,5 +70,5 @@ document.addEventListener('DOMContentLoaded', function() {
     agentIconListener("Sova");
     agentIconListener("Viper");
     agentIconListener("Yoru");
-
+    defaultGunLoad("Phantom")
 });

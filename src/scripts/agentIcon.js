@@ -25,7 +25,6 @@ export function agentIconFetch(agentName) {
      .then(function (data) {
          const agentData = data;
          findAgentIcon(agentData, agentName)
-        //  agentAbilityFetch(agentData, agentName)
      })
 }
 
@@ -49,8 +48,7 @@ export function agentIconListener(agentName) {
         selectedAgent = agentName;
         agentIcon.style.transform = "scale(1.2)"; 
         agentIcon.style.filter = "brightness(1.7)";  
-        agentIcon.style.border = "3px solid red";
-        agentIcon.style.boxShadow = "0 0 10px 3px red";
-        console.log(selectedAgent)
+        agentIcon.style.border = "3px solid rgb(221, 82, 82)";
+        agentIcon.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
     });
 }
