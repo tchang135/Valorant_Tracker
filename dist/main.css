@@ -37,7 +37,6 @@ body {
 .topRightButtons {
     text-align: right;
     position: relative;
-    /* display: inline-block; */
 }
 
 #githubIcon {
