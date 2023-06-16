@@ -91,6 +91,10 @@ export function weaponIconListener(weaponName, weaponData) {
             previousWeaponIcon.style.backgroundColor = "";
             document.querySelector(`#${selectedWeapon}Cost`).innerText = previousWeaponCost;
         }
+        const pistolNames = ['Classic', 'Frenzy', 'Shorty', 'Ghost', "Sheriff"];
+        if (pistolNames.includes(selectedWeapon)) {
+
+        }
         selectedWeapon = weaponName;
         const weaponCostText = document.querySelector(`#${weaponName}Cost`);
         previousWeaponCost = weaponCostText.innerText;
