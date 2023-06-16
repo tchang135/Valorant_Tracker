@@ -580,11 +580,11 @@ body {
 
 #weaponNameDisplay {
     color: white;
-    font-size: 50px;
+    font-size: 300%;
     margin-top: -0vh;
     font-family: 'Teko', sans-serif;
     margin-left: 3vw;
-    margin-bottom: 10%
+    margin-bottom: 8%
 }
 
 #magazineSize,
@@ -592,7 +592,7 @@ body {
 #reloadTime,
 #firstBulletAccuracy {
     color: white;
-    font-size: 26px;
+    font-size: 170%;
     font-family: 'Teko', sans-serif;
     margin: 0;
     margin-bottom: 5%;
