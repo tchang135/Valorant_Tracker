@@ -557,25 +557,33 @@ body {
     margin-bottom: 10vh;
     background-color: rgb(221, 82, 82);
     box-shadow: "0 0 10px 3px red";
+    justify-content: space-around;
 }
 
 .weaponImage {
-    margin-top: 9vh;
-    position: absolute;
-    width: 40vw;
-    height: 20vh;
-    margin-left: 3vw;
+    /* margin-top: 9vh;
+    margin-left: 3vw; */
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#weaponMainPortrait {
+/* #weaponPortraitContainer {
+    width: 30vw;
+    height: 40vh;
+} */
+
+.weaponMainPortrait {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit:contain;
 }
 
 .weaponStats {
-    margin-left: 50vw;
-    width: fit-content;
+    /* margin-left: 70%; */
+    width: 20vw;
 }
 
 #weaponNameDisplay {
