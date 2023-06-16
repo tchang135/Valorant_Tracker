@@ -586,11 +586,11 @@ body {
 
 #weaponNameDisplay {
     color: white;
-    font-size: 3.6rem;
+    font-size: 4vw;
     margin-top: -0vh;
     font-family: 'Teko', sans-serif;
     margin-left: 3vw;
-    margin-bottom: 8%
+    margin-bottom: 1vh;
 }
 
 #magazineSize,
