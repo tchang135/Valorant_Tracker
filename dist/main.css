@@ -584,31 +584,18 @@ body {
     margin-top: -0vh;
     font-family: 'Teko', sans-serif;
     margin-left: 3vw;
-    margin-bottom: -3.8vh;
+    margin-bottom: 10%
 }
 
-#magazineSize {
-    color: white;
-    font-size: 26px;
-    font-family: 'Teko', sans-serif;
-}
-
-#fireRate {
-    color: white;
-    font-size: 26px;
-    font-family: 'Teko', sans-serif;
-}
-
-#reloadTime {
-    color: white;
-    font-size: 26px;
-    font-family: 'Teko', sans-serif;
-}
-
+#magazineSize,
+#fireRate,
+#reloadTime,
 #firstBulletAccuracy {
     color: white;
     font-size: 26px;
     font-family: 'Teko', sans-serif;
+    margin: 0;
+    margin-bottom: 5%;
 }
 
 @keyframes blink {
