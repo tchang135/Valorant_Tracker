@@ -556,13 +556,11 @@ body {
     margin-left: 12vw;
     margin-bottom: 10vh;
     background-color: rgb(221, 82, 82);
-    box-shadow: "0 0 10px 3px red";
+    box-shadow: 0 0 10px 3px red;
     justify-content: space-around;
 }
 
 .weaponImage {
-    /* margin-top: 9vh;
-    margin-left: 3vw; */
     width: 60%;
     height: 40vh;
     display: flex;
@@ -570,19 +568,19 @@ body {
     align-items: center;
 }
 
-/* #weaponPortraitContainer {
-    width: 30vw;
-    height: 40vh;
-} */
+#weaponPortraitContainer {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
 
 .weaponMainPortrait {
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .weaponStats {
-    /* margin-left: 70%; */
     width: 20vw;
 }
 
@@ -600,10 +598,10 @@ body {
 #reloadTime,
 #firstBulletAccuracy {
     color: white;
-    font-size: 1.6rem;
+    font-size: 2vw; /* Adjust the value as per your preference */
     font-family: 'Teko', sans-serif;
     margin: 0;
-    margin-bottom: 5%;
+    margin-bottom: 2vh;
 }
 
 @keyframes blink {
