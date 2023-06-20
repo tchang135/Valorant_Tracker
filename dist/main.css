@@ -40,7 +40,7 @@ body {
 }
 
 #githubIcon {
-    font-size: 35px;
+    font-size: 2.8vw;
     transition: all 0.3s ease;
     margin-left: 3px;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 #linkedinIcon {
-    font-size: 35px;
+    font-size: 2.8vw;
     margin-left: 25px;
     transition: all 0.3s ease;
 }
@@ -70,7 +70,7 @@ body {
 
 
 #helpButton{
-    font-size: 35px;
+    font-size: 2.8vw;
     margin-left: 25px;
     transition: all 0.3s ease;
     margin-right: 1vw;
@@ -93,7 +93,7 @@ body {
     position: absolute;
     z-index: 1;
     left: -3.5vw;
-    top: 23vh;
+    top: 24vh;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
     font-size: 1.2vw;
@@ -285,12 +285,12 @@ body {
 #agentAbilityDescription {
     width: 30vw;
     color: white;
-    font-size: 22px;
+    font-size: 1.8vw;
     font-family: 'Teko', sans-serif;
 }
 
 #agentAbilityName {
-    font-size: 32px;
+    font-size: 2.5vw;
     color: white;
     width: 25vw;
     font-family: 'Teko', sans-serif;
