@@ -42,7 +42,7 @@ body {
 #githubIcon {
     font-size: 2.8vw;
     transition: all 0.3s ease;
-    margin-left: 3px;
+    /* margin-left: .5vw; */
 }
 
 #githubIcon:hover {
@@ -71,7 +71,7 @@ body {
 
 #helpButton{
     font-size: 2.8vw;
-    margin-left: 25px;
+    margin-left: 2vw;
     transition: all 0.3s ease;
     margin-right: 1vw;
 }
