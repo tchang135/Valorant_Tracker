@@ -8,7 +8,6 @@ function findWeaponData (weaponData, weaponName) {
     }
 
     if (weapon) {
-        console.log(weapon.shopData)
         document.querySelector(".weaponMainPortrait").src = weapon.displayIcon;
         document.querySelector('#weaponNameDisplay').innerText = weapon.displayName
         document.querySelector('#magazineSize').innerText = `Magazine size: ${JSON.stringify(weapon.weaponStats.magazineSize)} bullets`;
@@ -62,16 +61,18 @@ export function defaultGunLoad (weaponName) {
     })
 }
 
-export function weaponDataFetch(weaponName) {
+export function weaponDataFetch(weaponNames) {
     fetch("https://valorant-api.com/v1/weapons")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        const weaponData = data;
-        weaponIconListener (weaponName, weaponData)
-        weaponImageGrid(weaponData, weaponName)
-    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            const weaponData = data;
+            weaponNames.forEach(function (weaponName) {
+                weaponIconListener(weaponName, weaponData);
+                weaponImageGrid(weaponData, weaponName);
+            });
+        });
 }
 
 let selectedWeapon = null;
@@ -91,9 +92,20 @@ export function weaponIconListener(weaponName, weaponData) {
             previousWeaponIcon.style.backgroundColor = "";
             document.querySelector(`#${selectedWeapon}Cost`).innerText = previousWeaponCost;
         }
-        const pistolNames = ['Classic', 'Frenzy', 'Shorty', 'Ghost', "Sheriff"];
-        if (pistolNames.includes(selectedWeapon)) {
-
+        const pistolNames = ['Classic', 'Frenzy', "Sheriff"];
+        const ghostShorty = [ 'Shorty', 'Ghost']
+        if (pistolNames.includes(weaponName)) {
+            const weaponPortraitContainer = document.querySelector("#weaponPortraitContainer");
+            weaponPortraitContainer.classList.remove("pistol2");
+            weaponPortraitContainer.classList.add("pistol");
+        } else if (ghostShorty.includes(weaponName)) {
+            const weaponPortraitContainer = document.querySelector("#weaponPortraitContainer");
+            weaponPortraitContainer.classList.remove("pistol");
+            weaponPortraitContainer.classList.add("pistol2");
+        } else {
+            const weaponPortraitContainer = document.querySelector("#weaponPortraitContainer");
+            weaponPortraitContainer.classList.remove("pistol");
+            weaponPortraitContainer.classList.remove("pistol2");
         }
         selectedWeapon = weaponName;
         const weaponCostText = document.querySelector(`#${weaponName}Cost`);
