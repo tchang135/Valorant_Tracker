@@ -576,6 +576,7 @@ body {
     margin-left: 13vw;
 }
 
+
 .pistol2 .weaponMainPortrait {
     max-width: 60%;
     max-height: 60%;
@@ -588,9 +589,11 @@ body {
     object-fit: contain;
 }
 
+
 .weaponStats {
     width: 20vw;
 }
+
 
 #weaponNameDisplay {
     color: white;
@@ -600,6 +603,7 @@ body {
     margin-left: 3vw;
     margin-bottom: 1vh;
 }
+
 
 #magazineSize,
 #fireRate,
@@ -611,6 +615,7 @@ body {
     margin: 0;
     margin-bottom: 2vh;
 }
+
 
 @keyframes blink {
     0% {opacity: 1;}
