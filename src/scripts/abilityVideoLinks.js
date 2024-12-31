@@ -91,5 +91,9 @@ export const abilityVideos = {
   Clove2: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f74f0d7b96cae0bcf51e97ad99883a370508a381.mp4",
   Clove3: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/b9e4ee59e2e2a492ec5a76f71c2161faa6f03981.mp4",
   Clove4: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/71b28c3a8e3b6f29a2523f2cada52f2ea5a1eab0.mp4",
+  Vyse1: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/bacb07fdf5b13efeab5e24168f8e244257c1d0cb.mp4",
+  Vyse2: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/5cefca2b93f097285ce2cb4f20fec7184b555218.mp4",
+  Vyse3: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/84154b3401b08acad60d739616017a4fcd86710a.mp4",
+  Vyse4: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/f9d32afb39a3260b915ea6ef441054c904a69e91.mp4",
 };
 
