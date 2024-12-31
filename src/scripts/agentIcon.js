@@ -5,11 +5,14 @@ function findAgentIcon(agentData, agentName) {
     for (let i = 0; i < agentData.data.length; i++) {
         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
             agent = agentData.data[i]
+            console.log('hello')
             break;
+            
         }
     }
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
+        console.log('nice try')
 
     } catch (error) {
         console.log("Agent could not be found", error);
