@@ -75,9 +75,9 @@ export const abilityVideos = {
   Harbor2: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/eb767e57ea6e86cfb0992c92522ba8d606db8223.mp4",
   Harbor3: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6494d70cdea21aa4cb59b16d0f0b95c9432d709b.mp4",
   Harbor4: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/7a0d8e7b1457dd4df4f09da842e72273b0621f41.mp4",
-  Gekko1: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt79a9f8119f366ad1/64029afe10329144ff021282/Website_Gekko_Wingman_Stun_FNL.mp4",
-  Gekko2: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7a75dbdd9b6c4220/64029b4743153734d1472d59/Website_Gekko_Dizzy_FNL.mp4",
-  Gekko3: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf9f635d9cb6cf999/64029aa343153734d1472d55/Website_Gekko_MoshPit_FNL.mp4",
-  Gekko4: "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1a1188dafa478506/64029a1a205f2b7a60b74497/Website_Gekko_Thrash_FNL.mp4",
+  Gekko1: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/e9a92a506942c735f5a986ee9489fad34b192843.mp4",
+  Gekko2: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/f3a565e0cde441f1754eeadda2427020a795d4a0.mp4",
+  Gekko3: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/85f2c3958091bf4b8fb475c8bda0dcb10a409fbc.mp4",
+  Gekko4: "https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/fe30846150b8f87f7f945a3f0c82e59d0522dbdc.mp4",
 };
 
