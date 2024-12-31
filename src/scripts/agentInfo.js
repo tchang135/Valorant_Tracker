@@ -47,6 +47,7 @@ export function agentDataFetch(agentName) {
     .then(function (data) {
         const agentData = data;
         findAgentData(agentData, agentName)
+        console.log(data);
         agentAbilityFetch(agentData, agentName)
     })
 }
