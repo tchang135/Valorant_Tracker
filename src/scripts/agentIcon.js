@@ -100,26 +100,37 @@ export function agentIconFetch(agentName) {
 let selectedAgent = null;
 
 export function agentIconListener(agentName) {
-    const sanitizedAgentName = agentName.replace(/[^a-zA-Z0-9]/g, '-'); // Same sanitization for agentName
+    const sanitizedAgentName = agentName.replace(/[^a-zA-Z0-9]/g, '-'); // Sanitize agentName
 
     const agentIcon = document.querySelector(`#${sanitizedAgentName}Icon1`);
     agentIcon?.addEventListener("click", function (e) {
         e.preventDefault();
+
+        // If the clicked agent is already selected, return early
         if (selectedAgent === agentName) {
             return;
         }
+
+        // Reset the previous selected agent's icon styles
         if (selectedAgent) {
-            const previousSelectedIcon = document.querySelector(`#${selectedAgent}Icon1`);
-            previousSelectedIcon.style.transform = "";
-            previousSelectedIcon.style.filter = "";
-            previousSelectedIcon.style.border = "";
-            previousSelectedIcon.style.boxShadow = "";
+            const previousSelectedIcon = document.querySelector(`#${selectedAgent.replace(/[^a-zA-Z0-9]/g, '-')}Icon1`);
+            if (previousSelectedIcon) {
+                previousSelectedIcon.style.transform = "";
+                previousSelectedIcon.style.filter = "";
+                previousSelectedIcon.style.border = "";
+                previousSelectedIcon.style.boxShadow = "";
+            }
         }
+
+        // Fetch data and apply styles for the new selected agent
         agentDataFetch(agentName);
         selectedAgent = agentName;
+
+        // Apply styles to the new selected agent's icon
         agentIcon.style.transform = "scale(1.2)";
         agentIcon.style.filter = "brightness(1.7)";
         agentIcon.style.border = "3px solid rgb(221, 82, 82)";
         agentIcon.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
     });
 }
+
