@@ -39,18 +39,18 @@ function findAgentData(agentData, agentName ) {
     }
 }
 
-// export function agentDataFetch(agentName) {
-//     fetch("https://valorant-api.com/v1/agents")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         const agentData = data;
-//         findAgentData(agentData, agentName)
+export function agentDataFetch(agentName) {
+    fetch("https://valorant-api.com/v1/agents")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        const agentData = data;
+        findAgentData(agentData, agentName)
         
-//         agentAbilityFetch(agentData, agentName)
-//     })
-// }
+        agentAbilityFetch(agentData, agentName)
+    })
+}
 
 // export function agentDataFetch(agentName) {
 //     fetch("https://valorant-api.com/v1/agents")
@@ -70,21 +70,21 @@ function findAgentData(agentData, agentName ) {
 //         console.log("Error fetching data:", error);
 //     });
 // }
-export function agentDataFetch(agentName) {
-    fetch("https://valorant-api.com/v1/agents")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        console.log(data);  // Log the full API response
-        data.data.forEach(agent => {
-            console.log(agent.displayName);  // Log each agent's name
-        });
-        findAgentIcon(data, "Clove");
-        findAgentIcon(data, "Iso");
-    })
-    .catch(function (error) {
-        console.log("Error fetching data:", error);
-    });
-}
+// export function agentDataFetch(agentName) {
+//     fetch("https://valorant-api.com/v1/agents")
+//     .then(function (response) {
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         console.log(data);  // Log the full API response
+//         data.data.forEach(agent => {
+//             console.log(agent.displayName);  // Log each agent's name
+//         });
+//         findAgentIcon(data, "Clove");
+//         findAgentIcon(data, "Iso");
+//     })
+//     .catch(function (error) {
+//         console.log("Error fetching data:", error);
+//     });
+// }
 
