@@ -5,14 +5,17 @@ function findAgentIcon(agentData, agentName) {
     for (let i = 0; i < agentData.data.length; i++) {
         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
             agent = agentData.data[i]
-            console.log('hello')
             break;
             
+        }
+        const sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
+        if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
+            agent = agentData.data[i];
+            break;
         }
     }
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
-        console.log('nice try')
     
     } catch (error) {
         console.log("Agent could not be found", error);
@@ -28,7 +31,6 @@ export function agentIconFetch(agentName) {
      })
      .then(function (data) {
          const agentData = data;
-         console.log('good try')
          findAgentIcon(agentData, agentName)
      })
 }
@@ -37,7 +39,6 @@ let selectedAgent = null;
 
 export function agentIconListener(agentName) {
     const agentIcon = document.querySelector(`#${agentName}Icon1`);
-    console.log(agentName)
     agentIcon?.addEventListener("click", function (e) {
         e.preventDefault();
         if (selectedAgent === agentName) {
