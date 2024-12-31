@@ -13,9 +13,27 @@ function findAgentIcon(agentData, agentName) {
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
         console.log('nice try')
-
+    
     } catch (error) {
         console.log("Agent could not be found", error);
+    }
+    if (agentName = 'Iso') {
+        try {
+            document.querySelector(`IsoIcon1`).src = "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png";
+            console.log('nice try')
+        
+        } catch (error) {
+            console.log("Agent could not be found", error);
+        }
+    }
+    if (agentName = 'Clove') {
+        try {
+            document.querySelector(`CloveIcon1`).src = "https://media.valorant-api.com/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/displayicon.png";
+            console.log('nice try')
+        
+        } catch (error) {
+            console.log("Agent could not be found", error);
+        }
     }
 }
 
@@ -27,6 +45,7 @@ export function agentIconFetch(agentName) {
      })
      .then(function (data) {
          const agentData = data;
+         console.log('good try')
          findAgentIcon(agentData, agentName)
      })
 }
