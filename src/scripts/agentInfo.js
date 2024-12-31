@@ -52,39 +52,5 @@ export function agentDataFetch(agentName) {
     })
 }
 
-// export function agentDataFetch(agentName) {
-//     fetch("https://valorant-api.com/v1/agents")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);  // Log the full API response
-//         findAgentIcon(data, "Clove");
-//         findAgentIcon(data, "Iso");
-        
-//         // After fetching agent data, run your agentDataFetch with the specific agentName
-//         findAgentData(data, agentName);
-//         agentAbilityFetch(data, agentName);
-//     })
-//     .catch(function (error) {
-//         console.log("Error fetching data:", error);
-//     });
-// }
-// export function agentDataFetch(agentName) {
-//     fetch("https://valorant-api.com/v1/agents")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);  // Log the full API response
-//         data.data.forEach(agent => {
-//             console.log(agent.displayName);  // Log each agent's name
-//         });
-//         findAgentIcon(data, "Clove");
-//         findAgentIcon(data, "Iso");
-//     })
-//     .catch(function (error) {
-//         console.log("Error fetching data:", error);
-//     });
-// }
+
 

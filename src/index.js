@@ -8,6 +8,7 @@ agentIconFetch("Brimstone");
 agentIconFetch("Chamber");
 agentIconFetch("Clove");
 agentIconFetch("Cypher");
+agentIconFetch("Deadlock");
 agentIconFetch("Fade");
 agentIconFetch("Gekko");
 agentIconFetch("Harbor");
@@ -24,6 +25,7 @@ agentIconFetch("Sage");
 agentIconFetch("Skye");
 agentIconFetch("Sova");
 agentIconFetch("Viper");
+agentIconFetch("Vyse");
 agentIconFetch("Yoru");
 
 
@@ -61,12 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
     agentIconListener("Chamber");
     agentIconListener("Clove");
     agentIconListener("Cypher");
+    agentIconListener("Deadlock");
     agentIconListener("Fade");
     agentIconListener("Gekko");
     agentIconListener("Harbor");
     agentIconListener("Iso");
     agentIconListener("Jett");
-    // agentIconListener("KAY/O");
+    agentIconListener("KAY/O");
     agentIconListener("Killjoy");
     agentIconListener("Neon");
     agentIconListener("Omen");
@@ -77,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     agentIconListener("Skye");
     agentIconListener("Sova");
     agentIconListener("Viper");
+    agentIconListener("Vyse");
     agentIconListener("Yoru");
     defaultGunLoad("Phantom")
 });
