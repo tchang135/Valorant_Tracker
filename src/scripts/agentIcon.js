@@ -1,26 +1,56 @@
 import { agentDataFetch } from "./agentInfo";
 
-function findAgentIcon(agentData, agentName) {
-    let agent = ""
-    for (let i = 0; i < agentData.data.length; i++) {
-        if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
-            agent = agentData.data[i]
-            break;
+// function findAgentIcon(agentData, agentName) {
+//     let agent = ""
+//     for (let i = 0; i < agentData.data.length; i++) {
+//         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
+//             agent = agentData.data[i]
+//             break;
             
-        }
+//         }
+//         let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
+//         if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
+//             agent = agentData.data[i];
+//             break;
+//         }
+//     }
+//     try {
+//         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
+    
+//     } catch (error) {
+//         console.log("Agent could not be found", error);
+//     }
+    
+// }
+
+import { agentDataFetch } from "./agentInfo";
+
+function findAgentIcon(agentData, agentName) {
+    let agent = "";
+    let sanitizedAgentName = agentName.replace(/[^a-zA-Z0-9]/g, ''); // Fix here
+
+    for (let i = 0; i < agentData.data.length; i++) {
         let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
-        if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
+        if (
+            (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() ||
+            sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase()) &&
+            agentData.data[i]["isPlayableCharacter"]
+        ) {
             agent = agentData.data[i];
             break;
         }
     }
+
+    if (!agent) {
+        console.error("Agent not found:", agentName);
+        return;
+    }
+
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
-    
     } catch (error) {
-        console.log("Agent could not be found", error);
+        console.error("Error updating agent icon:", error);
     }
-    
 }
 
 
