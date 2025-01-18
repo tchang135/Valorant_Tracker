@@ -255,6 +255,7 @@ export function agentAbilityFetch(agentData, agentName) {
     // Set up event listeners for each ability icon
     abilityIcon1.addEventListener("click", function (e) {
         e.preventDefault();
+        console.log('ability 1')
         if (selectedAbility === agent.abilities[0].displayName) {
             return;
         }
