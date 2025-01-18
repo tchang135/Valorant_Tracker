@@ -27,13 +27,12 @@ import { agentDataFetch } from "./agentInfo";
 
 function findAgentIcon(agentData, agentName) {
     let agent = "";
-    let sanitizedAgentName = agentName.replace(/[^a-zA-Z0-9]/g, ''); // Fix here
 
     for (let i = 0; i < agentData.data.length; i++) {
-        let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
-        if (
-            (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() ||
-            sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase()) &&
+        const sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
+        const sanitizedAgentName = agentName.replace(/[^a-zA-Z0-9]/g, '');
+
+        if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() &&
             agentData.data[i]["isPlayableCharacter"]
         ) {
             agent = agentData.data[i];
@@ -49,9 +48,10 @@ function findAgentIcon(agentData, agentName) {
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
     } catch (error) {
-        console.error("Error updating agent icon:", error);
+        console.log("Agent could not be found", error);
     }
 }
+
 
 
 export function agentIconFetch(agentName) {
