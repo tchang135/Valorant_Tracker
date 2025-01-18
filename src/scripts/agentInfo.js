@@ -56,9 +56,16 @@ export function agentDataFetch(agentName) {
     return fetch("https://valorant-api.com/v1/agents")
         .then((response) => response.json())
         .then((data) => {
+            if (!data || !Array.isArray(data.data)) {
+                throw new Error("Invalid API response structure");
+            }
+
             const agentData = data;
             findAgentData(agentData, agentName);
-            agentAbilityFetch(agentData, agentName);
+
+            if (agentData.data.some(agent => agent.displayName.toUpperCase() === agentName.toUpperCase())) {
+                agentAbilityFetch(agentData, agentName);
+            }
         })
         .catch((error) => console.error("Failed to fetch agent data:", error));
 }
@@ -80,12 +87,19 @@ function findAgentData(agentData, agentName) {
     }
 
     try {
-        document.querySelector("#agentName").innerText = agent.displayName;
-        // Other DOM updates...
+        const agentNameElem = document.querySelector("#agentName");
+        if (agentNameElem) {
+            agentNameElem.innerText = agent.displayName;
+        } else {
+            console.error("#agentName element not found.");
+        }
+
+        // Add similar checks for other elements before manipulating them.
     } catch (error) {
         console.error("Error updating agent info:", error);
     }
 }
+
 
 
 
