@@ -14,7 +14,7 @@ agentIconFetch("Gekko");
 agentIconFetch("Harbor");
 agentIconFetch("Iso");
 agentIconFetch("Jett");
-agentIconFetch("KAY/O");
+// agentIconFetch("KAY/O");
 agentIconFetch("Killjoy");
 agentIconFetch("Neon");
 agentIconFetch("Omen");
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     agentIconListener("Harbor");
     agentIconListener("Iso");
     agentIconListener("Jett");
-    agentIconListener("KAY/O");
+    // agentIconListener("KAY/O");
     agentIconListener("Killjoy");
     agentIconListener("Neon");
     agentIconListener("Omen");
