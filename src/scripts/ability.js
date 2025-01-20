@@ -71,10 +71,8 @@ export function agentAbilityFetch(agentData, agentName) {
             previousAbilityIcon4.style.opacity = "0.5";   
         }
         abilityIcon1.style.transform = "scale(1.6)"; 
-        abilityIcon1.style.border = "3px solid red";
         abilityIcon1.style.border = "3px solid rgb(221, 82, 82)";
         abilityIcon1.style.opacity = "1"; 
-        abilityIcon1.style.boxShadow = "0 0 10px 3px red";
         abilityIcon1.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[0].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[0].description;
@@ -112,10 +110,8 @@ export function agentAbilityFetch(agentData, agentName) {
         document.querySelector("#agentAbilityName").innerText = agent.abilities[1].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[1].description;
         abilityIcon2.style.transform = "scale(1.6)"; 
-        abilityIcon2.style.border = "3px solid red";
         abilityIcon2.style.border = "3px solid rgb(221, 82, 82)";
         abilityIcon2.style.opacity = "1"; 
-        abilityIcon2.style.boxShadow = "0 0 10px 3px red";
         abilityIcon2.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
         selectedAbility = agent.abilities[1].displayName
         source.src = abilityVideoArray[1];
@@ -149,10 +145,8 @@ export function agentAbilityFetch(agentData, agentName) {
             previousAbilityIcon1.style.opacity = "0.5"; 
         }
         abilityIcon3.style.transform = "scale(1.6)"; 
-        abilityIcon3.style.border = "3px solid red";
         abilityIcon3.style.border = "3px solid rgb(221, 82, 82)";
         abilityIcon3.style.opacity = "1"; 
-        abilityIcon3.style.boxShadow = "0 0 10px 3px red";
         abilityIcon3.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[2].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[2].description;
@@ -188,10 +182,8 @@ export function agentAbilityFetch(agentData, agentName) {
             previousAbilityIcon1.style.opacity = "0.5"; 
         }
         abilityIcon4.style.transform = "scale(1.6)"; 
-        abilityIcon4.style.border = "3px solid red";
         abilityIcon4.style.border = "3px solid rgb(221, 82, 82)";
         abilityIcon4.style.opacity = "1"; 
-        abilityIcon4.style.boxShadow = "0 0 10px 3px red";
         abilityIcon4.style.boxShadow = "0 0 10px 3px rgb(221, 82, 82)";
         document.querySelector("#agentAbilityName").innerText = agent.abilities[3].displayName;
         document.querySelector("#agentAbilityDescription").innerText = agent.abilities[3].description;
