@@ -232,7 +232,9 @@ export function agentAbilityFetch(agentData, agentName) {
     const video = document.querySelector("#abilityVideoClip");
     const abilityVideoArray = agent.abilities.map((ability, index) => {
         const abilityKey = `${agent.displayName.toUpperCase()}_ability${index + 1}`;
-        return abilityVideos[abilityKey] || ""; // Fallback if video is not found
+        const videoUrl = abilityVideos[abilityKey] || ""; // Fallback if key not found
+        console.log(`Mapping abilityKey: ${abilityKey} to videoUrl: ${videoUrl}`);
+        return videoUrl;
     });
 
     // Reset all ability icons
@@ -240,14 +242,30 @@ export function agentAbilityFetch(agentData, agentName) {
 
     // Attach event listeners to ability icons
     abilityIcons.forEach((icon, index) => {
-        if (icon) {
-            icon.removeEventListener("click", handleAbilityClick); // Ensure no duplicate listeners
-            icon.addEventListener("click", (e) => handleAbilityClick(e, index));
+        if (!icon) {
+            console.warn(`Ability icon at index ${index} is missing.`);
+            return;
         }
+        icon.removeEventListener("click", handleAbilityClick); // Prevent duplicates
+        icon.addEventListener("click", (e) => {
+            console.log(`Ability icon clicked: ${index}`);
+            handleAbilityClick(e, index);
+        });
     });
 
     function handleAbilityClick(e, index) {
         e.preventDefault();
+        console.log(`Handling ability click for index ${index}`);
+
+        if (!agent.abilities[index]) {
+            console.error(`No ability found at index ${index}`);
+            return;
+        }
+
+        if (selectedAbility === agent.abilities[index].displayName) {
+            console.log("Same ability selected, no action taken.");
+            return;
+        }   
 
         // Prevent re-selecting the same ability
         if (selectedAbility === agent.abilities[index]?.displayName) return;
