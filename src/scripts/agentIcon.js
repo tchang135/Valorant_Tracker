@@ -100,11 +100,11 @@ function findAgentIcon(agentData, agentName) {
             break;
 
         }
-        let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
-        if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
-            agent = agentData.data[i];
-            break;
-        }
+        // let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
+        // if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
+        //     agent = agentData.data[i];
+        //     break;
+        // }
     }
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
