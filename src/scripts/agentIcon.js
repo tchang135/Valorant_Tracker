@@ -1,4 +1,4 @@
-import { agentDataFetch } from "./agentInfo";
+// import { agentDataFetch } from "./agentInfo";
 
 // function findAgentIcon(agentData, agentName) {
 //     let agent = ""
