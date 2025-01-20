@@ -91,31 +91,24 @@
 // }
 
 import { agentDataFetch } from "./agentInfo";
-
 function findAgentIcon(agentData, agentName) {
     let agent = ""
     for (let i = 0; i < agentData.data.length; i++) {
         if (agentData.data[i].displayName.toUpperCase() === agentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
             agent = agentData.data[i]
+            console.log('hello')
             break;
 
-        }
-        let sanitizedDisplayName = agentData.data[i].displayName.replace(/[^a-zA-Z0-9]/g, '');
-        if (sanitizedDisplayName.toUpperCase() === sanitizedAgentName.toUpperCase() && agentData.data[i]["isPlayableCharacter"]) {
-            agent = agentData.data[i];
-            break;
         }
     }
     try {
         document.querySelector(`#${agent.displayName}Icon1`).src = agent.displayIcon;
+        console.log('nice try')
 
     } catch (error) {
         console.log("Agent could not be found", error);
     }
-
 }
-
-
 export function agentIconFetch(agentName) {
     fetch("https://valorant-api.com/v1/agents")
      .then(function (response) {
@@ -126,9 +119,7 @@ export function agentIconFetch(agentName) {
          findAgentIcon(agentData, agentName)
      })
 }
-
 let selectedAgent = null;
-
 export function agentIconListener(agentName) {
     const agentIcon = document.querySelector(`#${agentName}Icon1`);
     agentIcon?.addEventListener("click", function (e) {
